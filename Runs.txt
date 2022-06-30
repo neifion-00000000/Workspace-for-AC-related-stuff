@@ -1,0 +1,2 @@
+RFC: At least 20
+WC:  At least 2

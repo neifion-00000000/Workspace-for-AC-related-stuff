@@ -1,0 +1,23 @@
+Faction Writeup--Information and possible solutions
+
+There is a mismatch between how PVP flagged NPCs should work and how they currently work.  Drooppi and I have investigated and come up with possible directions forward.  I'll outline the detection of blizzlike behavior, results of said detection, how it currently works on AC, and finish with a few proposals for feedback on which would be the best moving forward.
+
+First, how to detect.  The bytes2 field for mobs that should be pvp comes up as 1/1/0/0 on packet sniffs.  This can also be visually confirmed in game with an icon.  As far as I have sniffed, this is universal (which makes sense, we do a byte2 change in the core to assign the value to the mobs that have it.
+
+Second, the results of detection:
+All Civilian mobs should be pvp flagged (this is currently very inconsistent on AC, more wrong than right, explained later).  All gaurd mobs should be pvp flagged (this is currently correct as far as I can tell, due to the handling also explained later).  No "normal quest type" objective mobs should be pvp flagged (this is where the problems arose and this was first investigated).  There are many pvp factions (at least but not limited to 1 per faction per BG, and world pvp mobs) that should be flagged (check needs done still, but I believe these are currently working on the existing method, this is largely just cosmetic, players will already be flagged in all the areas they encounter these mobs except outside BGs)
+
+How it currently works, using SetPvP(true) or (false) all creatures that assist players are flagged as PVP, as well as all vehicles get flagged in battleground.cpp.  This sets the byte2 value and handles it accordingly.  This leads to a few misc questing mobs incorrectly flagged, and many misc civilian mobs incorrectly unflagged.  On factions that are not explicitly ally or horde and fall into those conditions I'm uncertain what happens because the practical in game impact of making a non horde/ally faction SetPvP(true) is nothing happens in game.  Would need to sniff to know if the byte2 values actually gets changed for those mobs or if its ignored.
+
+Finally, some proposals:
+All of my proposals include extending the existing functionality over to Civilian type mobs, as identified with extra_flags value.  There should be no complications there (as is the case with neutral mobs that assist players, nothing should happen on cases that aren't explicitly ally/horde, and all civilians should be flagged, something far from correct at the moment).
+
+The question then becomes what to do with the rest.  The easiest solution I think is to simply create exemptions for the small handful of mobs that are incorrectly flagged.  This will likely result in the least changes, and the exemptions would be explicit.
+
+Alternatively, the existing "all mobs that assist" could be removed and mobs of a certain type could be flagged (guards, pvp exclusive factions).  The main problem with this is there are a lot of mobs that fall outside of this.  The gaurd flag does not actually include all gaurds, and it is a flag that can see threw Feign Death mechanic.  I've already tested the behavior on retail classic and determined that the mobs that don't have the gaurd flag and are gaurds (Ashenvale Sentinels) should not see threw Feign Death.  So the extra_flag is applied correctly as far as I can tell.
+
+Lastly, a third solution would be to just change the faction to one of the duplicate factions for the few mobs that are related to quests, leave the functionality as is (other than adding civilians, I highly recommend doing that as there are a lot of them that need fixed) since there are not numerically many mobs flagged wrong and no one who isn't using packet sniffing will know they're a different faction.
+
+What would remain:  Some of the PVP scenarios would need combed over possibly, it would just be an aethetic error if any remain, as entering pvp zones or areas flags you automatically.  Certain named ("boss"-type) mobs don't have any way of being handled other than individually either.  Perhaps this should be a use of one of the unused extra_flags as I believe those are a custom fields as they do not show up in sniffs. 
+
+Additionally, we're looking into figuring out if bytes2 in creature_template_addon can be used for this instead of the existing methods, but there is very limited info there and the data isn't clear or consistent, to quote Drooppi "that bytes2 in creature_template seems... random" (it largely gets overwritten in game anyway).

@@ -1,0 +1,33 @@
+/* Research */
+/* DUSTWALLOW MARSH */
+/* Solid Chests appear to be 30m respawns in at least DWM */
+/* TELDRASSIL */
+/* 
+Flanked by Huntress Yaeliura and Huntress Nhemai, Moon Priestess Amara will be on the road between Dolanaar and Darnassus.
+
+They can be found patrolling between 55.74,58.35 and 50.21,53.87 with three exceptions:
+Any mob that gets too close to the road, where the troop will stop, kill, then resume their patrol
+A player asks the Priestess about  The Road to Darnassus which will cause the troop to stop where they are for 2 minutes
+Whilst they patrol westwards, at 50.44,55.52 they will encounter a group of four Gnarlpine Instigator, once they are all dead, the troop resume their patrol
+
+You will not be able to ask for this quest whilst the troop are in combat, if this happens, just wait and they will finish their fight then make the quest available to you.
+*/
+Mob entries for event that they attack
+(XXXXXX, 11690, 0, 0, 1, 0, 0, 1, 1, 0, 9921.884, 1259.4243, 1296.7728, 5.939044952392578125, 300, 0, 0, 1, 0, 0, 0, 0, 0, '', 0), -- .go xyz 9921.884 1259.4243 1296.7728
+(XXXXXX, 11690, 0, 0, 1, 0, 0, 1, 1, 0, 9917.307, 1255.912, 1297.5156, 6.079781532287597656, 300, 0, 0, 1, 0, 0, 0, 0, 0, '', 0), -- .go xyz 9917.307 1255.912 1297.5156
+(XXXXXX, 11690, 0, 0, 1, 0, 0, 1, 1, 0, 9920.764, 1256.899, 1297.7871, 6.026713371276855468, 300, 0, 0, 1, 0, 0, 0, 0, 0, '', 0), -- .go xyz 9920.764 1256.899 1297.7871
+(XXXXXX, 11690, 0, 0, 1, 0, 0, 1, 1, 0, 9918.689, 1258.1425, 1296.6768, 6.007225513458251953, 300, 0, 0, 1, 0, 0, 0, 0, 0, '', 0), -- .go xyz 9918.689 1258.1425 1296.6768
+
+/* I Don't think the Ancient Protectors are supposed to kill hostile wildlife like the patroling elves, but they do on AC at the moment */
+
+/* Uruson has about a 15 min respawn */
+
+/* General Spawns in zone are 6 min+ */
+
+Same with Melnas <-- what did I mean here
+
+Threggil's Respawn is somewhere around 15m-30m
+
+/* Gnarlpine Necklace should only drop if you're on the quest for it --checked working */
+
+/* https://www.youtube.com/watch?v=nxJcfxKNHDE chest pool and respawn timers and fel rock quest respawn timer too --fixed */
