@@ -1,14 +1,19 @@
 ZG Research
---Before first bridge 
-49742, 49115 Trolls in front in Huts Can be Priests or Axe Throwers, outside huts are Axe Throwers
-Most Adders can be either and all Serpents can, but there are some complexities as you go on.  Adder/Adder is slightly less common than the other combonations, except when it's not.  Leaving it 50/50 is prolly fine on all 2 packs.
+
+--Before first bridge DONE
+Trolls in front in Huts Can be Priests or Axe Throwers, outside huts are Axe Throwers
+All paired snakes can be either type, but there are some complexities on bigger packs.  Adder/Adder is slightly less common than the other combos, except when it's not.  Leaving it 50/50 is prolly fine on all 2 packs.
 (3) Bridge Entrance Patrol seen Axe/Priest and Axe/Axe
---After first bridge
+
+
+--After first bridge 
 49097 needs moved forward
-Bat Pack also needs adjusted 
-Front Troll can be a Priest or Axe Thrower, Right is always an adder?
-Headhunter in Hut can also be witchdoctor
-Seen 4-5 Crocs
+Bat pack rotates positions (4 pools)
+Front Troll can be a Priest or Axe Thrower, Adders can be any combo
+Headhunter in Hut can also be witchdoctor, in front is always one of each 2 pools of 3  always match the hut directly in front
+Seen 4-5 Crocs (6 Pools)
+All Crocs movement is a scripted action that occurs about every 30 seconds, not normal random movement 
+
 --After second bridge up and around 
 200616 does not exist?
 Hut Mob can be Axe Thrower or a Priest
@@ -16,21 +21,22 @@ PATROL Serpents OR Adder OR both
 Left 2 Adders, Right 2 Serpents OR seemingly anything except all of the same type
 --Serpent Boss Area 
 3x Serpent / 3x Adder (this pack is always the same but mobs are in different locations each time)
-Speaker pack Back left can change uncommonly to a serpent, otherwise 3x Adders
+Snakes in the speaker pack seem to be completely random, an honestly unusual trait for when 4+ are present.  Seems to always include Priest / Axe Thrower
+
+
 -- Zansas Rise 
 2x Adders front of temple, 2x Serepents Closer to Temple, OR seemingly anything except all of the same type
 Adder / Serpent or Adder/Adder PATROL  
-2-4x/Adder/Serpent in back
-Venombrood/Venombrood OR Bat/Bat OR Tiger/Tiger OR Singles (Tiger/Raptor) OR Adder/Serpent, Witch Doctor OR Priest OR Blood Drinker in Hut, Axe Thrower OR Headhunter OR Shadowhunter OR Blood Drinker
+2-4x/Adder/Serpent in back  -- always 4 or 2
+Venombrood/Venombrood OR Bat/Bat OR Tiger/Tiger OR (LEFT OF TENT) Singles (Tiger/Raptor) OR Adder/Serpent, Witch Doctor OR Priest OR Blood Drinker in Hut, Axe Thrower OR Headhunter OR Shadowhunter OR Blood Drinker
 Seen 2 Packs of 4-5 crocs
---Outside Tiger Area is all Static but after that
-Serpents in order seen: Serp Serp Adder Adder 
-PATROL Adder/Serpent
-PATROL Adder/Adder <-- just uncommon?
+Outside EoM There are no standing snakes
+
+
 --Before Panther Area
-Tiger/Tiger OR Venombrood/Venombrood OR singles (Raptor, Panther), Blood Drinker OR Witch Doctor OR Priest in tent, Blood Drinker OR Witch Doctor OR Headhunter OR Shadow Hunter outside
-Adder/Serpent OR Bat/Bat OR Venombrood/Venombrood OR Tiger/Tiger OR singles (Raptor/Panther), Blood Drinkerer OR Priest OR Witch Doctor in tent, Axe Thrower OR Shadow Hunter outside
-Bat/Bat OR Venombrood/Venombrood OR Panther/Panther OR Tiger/Tiger OR singles (Raptor/Panther), Witch Doctor OR Priest in Tent, Headhunter OR Axethrower OR Blood Drinker
+first,  Venombrood/Venombrood OR Bat/Bat OR Tiger/Tiger OR Adder/Serpent OR (LEFT OF TENT) Singles (Tiger/Raptor), Witch Doctor OR Priest OR Blood Drinker in Hut, Blood Drinker OR Headhunter OR Shadow Hunter outside
+second, Venombrood/Venombrood OR Bat/Bat OR Tiger/Tiger OR Adder/Serpent OR (CLOSE TO TENT) Singles (Tiger/Raptor), Witch Doctor OR Priest OR Blood Drinker in Hut, Axe Thrower OR Shadow Hunter OR Headhunter OR Blood Drinker outside
+back,   Venombrood/Venombrood OR Bat/Bat OR Tiger/Tiger OR Panther/Panther OR Adder/Serpent OR (RIGHT OF TENT) Singles (Raptor/Panther), Witch Doctor OR Priest OR Blood Drinker in Hut, Headhunter OR Axethrower OR Blood Drinker or Shadow Hunter outside
 --Panther Outside, going right bottom
 4x Panther, 2x Blood
 4x Panther Front Shadow Hunter Back Blood Drinker OR SH/SH 
@@ -46,22 +52,24 @@ SH / Blood Drinker + 4 Panthers in back or SH/SH
 4x Panther Front Shadow Hunter Back Blood Drinker OR SH/SH
 4x Panther 2x Shadow Hunter downstairs further
 --4 Huts on the left toward hakkar 
-PATROL TO TENT 2 SH / Blood Drinker  OR Blood Drinker / Witch Doctor
-Bat/Bat OR Venombrood/Venombrood OR Singles (Raptor), Blood Drinker OR Witch Doctor OR Priest in tent, Shadow Hunter OR Blood Drinker OR Axe thrower outside
-Venombrood/Venombrood OR Singles (Raptor, Panther), Witch Doctor OR Blood Drinker OR Priest in tent, Axe Thrower OR Headhunter OR Shadow Hunter outside
-Bat/Bat OR Serpent/Adder, Witch Doctor in Tent, Blood Drinker OR Axe Thrower outside
-Bat/Bat OR Serpent/Adder, Priest OR Witch Doctor in Tent, Headhunter OR Axe Thrower OR Blood Drinker outside
-PATROL TO TENT 3 Headhunter / Priest OR Axe Thrower / Witch Doctor OR Shadowhunter / Blood Drinker
+PATROL TO TENT 2 SH / Blood Drinker  OR Blood Drinker / Witch Doctor  OR Axethrower / Witch Doctor OR Axethrower / Priest OR Headhunter / Priest
+TENT 1 Bat/Bat OR Venombrood/Venombrood OR Adder/Serpent Or (LEFT OF TENT) Singles (Panther, Raptor), Blood Drinker OR Witch Doctor OR Priest in tent, Shadow Hunter OR Blood Drinker OR Axe thrower OR Headhunter outside
+TENT 2 Venombrood/Venombrood OR Serpent/Adder OR (RIGHT OF TENT) Singles (Raptor, Panther), Witch Doctor OR Blood Drinker OR Priest in tent, Axe Thrower OR Headhunter OR Shadow Hunter OR Blood Drinker outside
+TENT 3 Bat/Bat OR Tiger/Tiger OR Serpent/Adder OR Venombrood/Venombrood OR (FRONT OF TENT) Singles (Panther, Raptor), Witch Doctor OR Priest OR Blood Drinker in Tent, Blood Drinker OR Axe Thrower OR Headhunter OR Shadowhunter outside
+TENT 4 Bat/Bat OR Tiger/Tiger OR Serpent/Adder OR Venombrood/Venombrood OR (RIGHT OF TENT) Singles (Panther, Raptor), Priest OR Witch Doctor OR Blood Drinker in Tent, Headhunter OR Axe Thrower OR Shadowhunter OR Blood Drinker outside
+PATROL TO TENT 3 Headhunter / Priest OR Axe Thrower / Witch Doctor OR Shadowhunter / Blood Drinker OR Axethrower / Priest OR Witch Doctor / Blood Drinker 
 --2 Huts on right after Panther and tucked away area by UD
-Serpent/Adder OR Singles (Raptor), Priest OR Witch Doctor in Tent, Axe Thrower OR Blood Drinker on steps
-Bat/Bat OR Singles (Panther, Raptor), Witch Doctor OR Blood Drinker in Tent, Axe Thrower OR Blood Drinker OR Shadowhunter on steps
+Bat/Bat OR Tiger/Tiger OR Serpent/Adder OR Venombrood/Venombrood OR (FRONT OF TENT) Singles (Raptor, Panther), Priest OR Witch Doctor OR Blood Drinker in Tent, Axe Thrower OR Blood Drinker OR Headhunter OR Shadow Hunter on steps
+Bat/Bat OR Tiger/Tiger OR (FRONTLEFT OF TENT) Singles (Panther, Raptor), Priest OR Witch Doctor OR Blood Drinker in Tent, Headhunter OR Axe Thrower OR Blood Drinker OR Shadowhunter on steps
 4 Snakes, never less than 1 of each type
 -- UD Area
 PATROLS seem to be all Withered Mistresses
-Left 4x Withered Mistress might change?
+Left 4x Withered Mistress or 1x Atal'ai Mistress sometimes
 All Packs seem to be 3x Atali 3x slave 4x withered 
+
 ---Spiders area seem static
----Upward to Hakkari from the first hut counter clockwise following path down and up
+
+---Hakkari area is static too
 2x Priest, 4x Blood Drinker
 Blood Drinker x2, Priest, Raptor 
 2 Raptor, 2 Blood Drinker, Priest
@@ -83,4 +91,14 @@ always 4 champions
 4 Champion 
 6 Raptor
 
-Excess patrolling mobs: 49119, 49117, 49116
+--Altar of the Blood God
+North/South Pats 1x Soulflayer 2x Son of Hakkar  
+North Combo (2x Soulflayer OR 1x Soulflayer 1x Son of Hakkar), ([4] 2x Witch Doctor 1x Champion 1x Blood Priest OR [4] 2x Axethrower 1x Witch Doctor 1x Shadowcaster OR [5]xx 2x Blood Drinker 1x Blood Priest 1x Priest 1x Shadow Hunter)
+South Combo (2x Soulflayer OR 1x Soulflayer 1x Son of Hakkar), ([4] 1x Shadowcaster 1x Blood Drinker 1x Blood Priest 1x Headhunter OR [4] 2x Blood Drinker 2x Blood Priest OR [4] 2x Witch Doctor 1x Champion 1x Blood Priest OR [4] 2x HeadHunter 2x Blood Priest  [5] 2x Axe Thrower 1x Blood Priest 1x Witch Doctor 1x Shadowcaster)
+
+--Below Altar of the Blood God
+East 2x Speaker 1x Blood Priest 2x Priest 2x Son  of Hakkar
+West South 2x Son of Hakkar 1x Berserker 1x Blood Priest
+West North 2x Son of Hakkar 2x Champion 1x Blood Priest
+
+

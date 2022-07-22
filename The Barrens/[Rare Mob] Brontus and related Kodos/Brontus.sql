@@ -1,6 +1,6 @@
 
 
-DELETE FROM `pool_template` WHERE entry IN (391, 392, 393); 
+DELETE FROM `pool_template` WHERE entry IN (391, 392, 393, 394); 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES ('391', '4', 'Brontus Kodo Pack Combo 1 -- 4 Barrens Kodo Pack');
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES ('392', '4', 'Brontus Kodo Pack Combo 2 -- Mixed Kodo Pack');
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES ('393', '4', 'Brontus Kodo Pack Combo 3 -- Brontus Pack');
