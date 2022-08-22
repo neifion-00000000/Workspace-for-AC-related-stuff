@@ -3,7 +3,7 @@ UPDATE `creature` SET `id1`='11371' WHERE `guid` IN (49096, 49097);
 UPDATE `creature` SET `id2`='11372' WHERE `guid` IN (49096, 49097);
 
 /* Priest can be Axe thrower */
-UPDATE `creature` SET `id2`='11350' WHERE  `guid`=49754;
+UPDATE `creature` SET `id2`='11350' WHERE `guid`=49754;
 
 /* Crocs movement is a scripted action that occurs about every 30 seconds, not normal random movement */
 UPDATE `creature` SET `wander_distance`='0', `MovementType`='0' WHERE `id1`=15043;

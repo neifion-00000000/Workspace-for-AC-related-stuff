@@ -5,23 +5,25 @@ Trolls in front in Huts Can be Priests or Axe Throwers, outside huts are Axe Thr
 All paired snakes can be either type, but there are some complexities on bigger packs.  Adder/Adder is slightly less common than the other combos, except when it's not.  Leaving it 50/50 is prolly fine on all 2 packs.
 (3) Bridge Entrance Patrol seen Axe/Priest and Axe/Axe
 
-
---After first bridge 
+--After first bridge DONE
 49097 needs moved forward
-Bat pack rotates positions (4 pools)
 Front Troll can be a Priest or Axe Thrower, Adders can be any combo
-Headhunter in Hut can also be witchdoctor, in front is always one of each 2 pools of 3  always match the hut directly in front
 Seen 4-5 Crocs (6 Pools)
 All Crocs movement is a scripted action that occurs about every 30 seconds, not normal random movement 
+Bat pack rotates positions (4 pools)
+Headhunter in Hut can also be witchdoctor, in front is always one of each 2 pools of 3  always match the hut directly in front
 
---After second bridge up and around 
-200616 does not exist?
+--After second bridge up and around DONE
+200616 does not exist
 Hut Mob can be Axe Thrower or a Priest
 PATROL Serpents OR Adder OR both
+
 Left 2 Adders, Right 2 Serpents OR seemingly anything except all of the same type
+
 --Serpent Boss Area 
 3x Serpent / 3x Adder (this pack is always the same but mobs are in different locations each time)
-Snakes in the speaker pack seem to be completely random, an honestly unusual trait for when 4+ are present.  Seems to always include Priest / Axe Thrower
+Snakes in the speaker pack seem to be completely random, an honestly unusual trait for when 4+ are present.  
+	Additionally, seems to always include Priest / Axe Thrower / Speaker but in different locations
 
 
 -- Zansas Rise 

@@ -1,0 +1,12 @@
+Mind Control List:
+Gurubashi Axe Thrower -- gathered 
+11338;Hakkari Shadowcaster -- gathered
+11339;Hakkari Shadow Hunter -- gathered
+11351;Gurubashi Headhunter -- gathered
+11353;Gurubashi Blood Drinker -- gathered 
+11356;Gurubashi Champion -- gathered
+11831;Hakkari Witch Doctor -- gathered
+11340;Hakkari Blood Priest -- mostly gathered
+Sandfury Speaker regular attack only
+11830;Hakkari Priest Immune 
+Gurubashi Berserker -- Immune

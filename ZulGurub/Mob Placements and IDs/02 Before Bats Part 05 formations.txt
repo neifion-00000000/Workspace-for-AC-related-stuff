@@ -1,0 +1,7 @@
+-- Maintenance on ZG Before Bats Part 5: Agro linking via creature_formations
+DELETE FROM `creature_formations` WHERE `memberGUID` IN (49753, 49754, 49096, 49097);
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES 
+(49753, 49753, 0, 0, 3, 0, 0),
+(49753, 49754, 0, 0, 3, 0, 0),
+(49753, 49096, 0, 0, 3, 0, 0),
+(49753, 49097, 0, 0, 3, 0, 0);
