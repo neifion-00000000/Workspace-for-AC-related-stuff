@@ -1,0 +1,5 @@
+Packet Draenei Paladin Spuh 01:
+
+Inoculation (9303) (NPC TAGGING QUEST)
+Unsure if Nestlewood Owlkin (16518) can all spawn at once, but I suspect not, needs deeper dive when waypoints are gathered.  Gathered spawns in this packet.
+

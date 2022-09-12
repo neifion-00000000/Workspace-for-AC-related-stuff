@@ -1,0 +1,29 @@
+-- Packet Draenei Paladin Spuh 01:
+
+-- Replenishing the Healing Crystals (9280 Draenei Version) (DROP QUEST)
+-- Vial of Moth Blood (item 22889): 50/50 
+UPDATE `creature_loot_template` SET `Chance`=100 WHERE  `Entry`=16517 AND `Item`=22934 AND `Reference`=0 AND `GroupId`=0;
+
+-- Botanical Legwork (9799) (GAMEOBJECT QUEST)
+-- Corrupted Flowers (gameobject 182127) heavily investigated spawnpoints, needs a max count scan in the future.  Appear to operate the way a single pool would.
+
+-- What Must Be Done... (9293) (DROP QUEST)
+-- Lasher Sample (item 16517): 50/50
+UPDATE `creature_loot_template` SET `Chance`=100 WHERE  `Entry`=16520 AND `Item`=22889 AND `Reference`=0 AND `GroupId`=0;
+
+-- Spare Parts (9305) (GAMEOBJECT QUEST)
+-- Emitter Spare Part (gameobject 181283) heavily investigated spawnpoints, needs a max count scan in the future.  Appear to operate the way a single pool would.
+
+-- Blood Elf Plans (9798) (DROP STARTER)
+-- Checked Correct on AC 
+
+
+-- Packet Draenei Paladin Spuh 02:
+
+-- Red Snapper - Very Tasty! (9452) (GAMEOBJECT QUEST + DROP QUEST)
+-- Red Snapper (item 23614) by using spell 29867 on object 181616 (heavily investigated spawn points, appear to operate on a randomized but fast respawn)
+
+-- Gameobject Finds
+
+(@OGUID+144, 181488, 530, 3524, 3559, 1, 1, -4469.01904296875, -14118.9169921875, 109.05523681640625, 0.253072351217269897, 0, 0, 0.126198768615722656, 0.992004990577697753, 120, 255, 1, 0), -- 181488 (Area: 3559 - Difficulty: 0)
+(@OGUID+30, 181984, 530, 3524, 0, 1, 1, -3704.78125, -13588.146484375, 8.325993537902832031, 4.127703666687011718, 0, 0, -0.8808908462524414, 0.473319470882415771, 120, 255, 1, 0); -- 181984 (Area: 0 - Difficulty: 0)
