@@ -1,13 +1,13 @@
 -- Packet Draenei Paladin Spuh 01:
 
--- Replenishing the Healing Crystals (9280 Draenei Version) (DROP QUEST)
+-- Replenishing the Healing Crystals (9280 Draenei Version) (DROP QUEST)  (DONE)
 -- Vial of Moth Blood (item 22889): 50/50 
 UPDATE `creature_loot_template` SET `Chance`=100 WHERE  `Entry`=16517 AND `Item`=22934 AND `Reference`=0 AND `GroupId`=0;
 
 -- Botanical Legwork (9799) (GAMEOBJECT QUEST)
 -- Corrupted Flowers (gameobject 182127) heavily investigated spawnpoints, needs a max count scan in the future.  Appear to operate the way a single pool would.
 
--- What Must Be Done... (9293) (DROP QUEST)
+-- What Must Be Done... (9293) (DROP QUEST)  (DONE)
 -- Lasher Sample (item 16517): 50/50
 UPDATE `creature_loot_template` SET `Chance`=100 WHERE  `Entry`=16520 AND `Item`=22889 AND `Reference`=0 AND `GroupId`=0;
 
@@ -18,7 +18,7 @@ UPDATE `creature_loot_template` SET `Chance`=100 WHERE  `Entry`=16520 AND `Item`
 -- Checked Correct on AC 
 
 
--- New Gameobject Finds Spuh 01 + Cookpot
+-- New Gameobject Finds Spuh 01 + Cookpot  (DONE + MERGED)
 SET @OGUID :=7080;
 DELETE FROM `gameobject` WHERE `guid` BETWEEN @OGUID+0 AND @OGUID+3;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES

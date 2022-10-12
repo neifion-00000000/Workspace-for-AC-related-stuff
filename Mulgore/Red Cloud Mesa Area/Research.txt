@@ -1,9 +1,3 @@
 Mulgore:
 
 Patrol Brave Windfeather 3209 goes from first hut to last hut then backwards 1 hut at a time back to second hut then forward 1 hunt at a time to end then back to first hut and loops  (Wrong on AC--Sniffed)
-
-Durotar:
-
-Cactus Apple have pooling and won't all be up at the same time
-
-Adder/Hare share spawns
