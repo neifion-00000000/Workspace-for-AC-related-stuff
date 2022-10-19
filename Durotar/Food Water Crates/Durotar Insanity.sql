@@ -1,11 +1,5 @@
--- Durotar Food Crate Water Barrel Gameobject Overhaul
-
-/* Remove existing Water Barrels 3658--some of these may be correct, but we have all the spawns now so this will be easier */
-DELETE FROM `gameobject` WHERE `guid` IN (12551, 12397, 12395, 12351, 12391, 12498, 12550, 12393);
-/* Remove existing Food Crates 3719 as well */
-DELETE FROM `gameobject` WHERE `guid` IN (12553, 12549, 12502, 12501, 12350, 12346, 12602, 12505, 12392);
 SET @GAMEOBJECTBLOCK :=44477; -- There is a large free block of gameobject guids starting there that fits all 122 objects
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 9688 AND 9839;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN @GAMEOBJECTBLOCK+0 AND @GAMEOBJECTBLOCK+121;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`) VALUES
 -- Durotar Food Water GO Pool I Kolkar Crag
 (@GAMEOBJECTBLOCK+0, 3658, 1, 0, 0, 1, 1, -1045.77, -4608.98, 25.831, 0.0349062, 0, 0, 0.0174522, 0.999848, 420, 255, 1, '', 0), -- .go xyz -1045.77 -4608.98
