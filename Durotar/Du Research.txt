@@ -1,0 +1,30 @@
+Durotar:
+
+Cactus Apple have pooling and won't all be up at the same time
+
+Adder/Hare share spawns
+
+Copper Ore:  (Submitted PR to AC?)
+3-Skull Rock
+3-Outside Skull Rock North
+3-Outside Skull Rock South 
+2-Dustwind Cave
+5-Eastern Harpy Area
+2-Western Harpy Area 
+3-Tor'kren Farm West
+3-Tor'kren Farm East
+4-Above Thunder Ridge
+4-Inside Thunder Ridge
+3-Razormane Grounds (South/West)
+1-Razoremane Grounds East
+3-South of Razormane Grounds
+2-Tiragarde Keep
+3-Around Sen'Jin Village
+2-Kolkar Crag
+2-Echo Isles
+--48 total at once
+
+Rare Mobs Checklist (all have some sniffs from old packets as well):
+Watch Commander Zalaphil 59.9,59.0 (Yahmage Rares 1)
+Felweaver Scornn 52.7,8.9 (Yahmage Rares 1)
+Geolord Mottle 43.8,50.4 (Yahmage Rares 1)

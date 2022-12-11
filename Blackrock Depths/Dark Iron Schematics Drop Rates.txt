@@ -1,0 +1,3 @@
+-- Dark Iron Schematics
+UPDATE `creature_loot_template` SET `Chance`=2 WHERE  `Entry`=8920 AND `Item`=16049 AND `Reference`=0 AND `GroupId`=0;
+UPDATE `creature_loot_template` SET `Chance`=3 WHERE  `Entry`=8897 AND `Item`=16048 AND `Reference`=0 AND `GroupId`=0;

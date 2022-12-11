@@ -1,0 +1,41 @@
+-- Bloodmyst Isle
+
+Large Battered Chests (75293), Battered and Tattered Chests (2843, 2844),  Giant clams (2744), box of assorted parts, barrels of milk, food crates that have higher level stuff in them, also boxes of assorted parts 
+
+Battered/Tattered Chests: 
+2 total:
+[0-2-Owlkin
+0-2 Naga Pool
+0-1 Hidden Reef
+0-1 Axxarien area
+0-1 Island Mountain]
+1-Furblogs
+1-Southern Murlocs
+1-Nazzivian
+1-Northern Murlocs + Warp Piston??
+1-Bladewood
+1-Non-elite BEs/Water Elementals
+
+
+
+-- Gultask's Research edited for correctness at points w/ added notes
+Bloodmyst Isle:
+ - Peacebloom: 16
+ - Silverleaf: 22
+ - Earthroot: 12
+ - Mageroyal: 8
+ - Briarthorn: 9
+ Small clustering is common
+ 
+ - Stranglekelp: 
+ 6 Hidden Reef Area:  There might be as many as 6 stranglekelp and 2 copper in this area along with clams
+ 2 Bloodwash Area:  2 Stranglekelp, clam shared with North Crimson Reach prolly
+ 2 Wyrmscar Island:  2 are in the east and north, the west are likely shared with North Crimson Reach partially
+ 5 Crimson Reach: Prolly split 2/3 North/South (a clam in each too)
+ 6 Blacksilt shore:  3 on the west (west includes southwest) / 3 on the south, west may "donate" to south  (a clam for each)
+
+ - Bruiseweed:
+	- Axxarien: 1
+	- Amberweb Pass: 1
+	- The Vector Coil: 2
+	- The Cryo-Core: 1
