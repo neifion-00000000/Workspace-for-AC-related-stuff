@@ -1,0 +1,9 @@
+Stranglethorn Vale Research
+
+-- Encrusted Tail Fins should be 100% and only off Saltscale Murlocs
+UPDATE `creature_loot_template` SET `Chance`=100 WHERE `Item`=5796 AND `entry` IN (871, 873, 875, 877, 879);
+DELETE FROM `world`.`creature_loot_template` WHERE  `Entry` IN (4457, 4458, 4459, 4460, 4461) AND `Item`=5796 AND `Reference`=0 AND `GroupId`=0;
+
+-- Pulsing Blue Shards drop at a very high rate off Ironjaw Basilisk only
+
+-- Gluggle and 2 Murkfin Hunter Patrols are in 3.4.0.47168 Troll Mage Yahmage Stranglethorn Vale Quests (3) also Redridge Mountain Hillarys Pendant Quest and zone discoveries.pkt

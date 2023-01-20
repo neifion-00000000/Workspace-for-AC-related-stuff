@@ -1,0 +1,9 @@
+The Star The Hand and the Heart Research
+
+-- Grel'borg the Miser has a 7m/standard respawn timer
+-- Grel'borg the Miser's pathing has been sniffed
+
+-- Mogh the Undying has a 7m/standard respawn timer and summons a Kurzen Mindslave pretty much right after respawning
+-- Stationary with a staff
+
+-- That last guy also has some behaviors and I got them recorded and sniffed too

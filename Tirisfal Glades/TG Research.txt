@@ -3,15 +3,128 @@ Tirisfall Glades Research
 -- Rare Mob Timer Solves (These are all first impression respawn timers using datamine methods for accuracy, there is definitely diversity in spawn timers unable to be represented and requiring further research but this will be closer to correct)
 -- Fellicent's Shade 52 min
 UPDATE `creature` SET `spawntimesecs`=3120 WHERE `guid`=42143;
+/* General drop habits sampled, can drop typical loot + 1 gaurenteed loot + area loot
+10358,1,12 25c 4604 Forest Mushroom Cap,1 6512 Disciple's Robe,1
+10358,1,12 24c 159 Refreshing Spring Water,1 1737 Worn Mail Vest,1 9760 Cadet Bracers,1
+10358,1,12 13c 9763 Cadet Leggings,1
+10358,1,12 10c 9754 Gypsy Cloak,1
+10358,1,12 25c 159 Refreshing Spring Water,1 7351 Disciple's Boots,1
+10358,1,12 24c 2589 Linen Cloth,2 9758 Cadet Belt,1
+10358,1,12 19c 2589 Linen Cloth,2 7351 Disciple's Boots,1
+10358,1,12 3c 2589 Linen Cloth,1 1497 Calico Cloak 1,9754 Gypsy Cloak,1
+10358,1,12 5c 6506 Infantry Boots,1
+*/
+UPDATE `creature_template` SET `mingold`='3', `maxgold`='25' WHERE `entry`=10358;
+/* More detailed loot from wowhead, matches general expectations */
+/* There is no evidence of any rare mobs or level 12 mobs dropping these items, but more specifically it looks like rare mobs in this zone don't drop gems or recipes */
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=774 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=1210 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=818 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=6344 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=6342 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=6348 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=2406 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=4346 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=2598 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=6271 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=2555 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=24071 AND `Reference`=24071 AND `GroupId`=1;
+/* ??? */ 
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=2835 AND `Reference`=0 AND `GroupId`=0;
+/* Sanitize Healing Potion, Water, Food, Linen, Scroll drop rates */
+UPDATE `creature_loot_template` SET `Chance`=3 WHERE `Entry`=10358 AND `Item`=118 AND `Reference`=0 AND `GroupId`=0;
+UPDATE `creature_loot_template` SET `Chance`=3 WHERE `Entry`=10358 AND `Item`=159 AND `Reference`=0 AND `GroupId`=0;
+UPDATE `creature_loot_template` SET `Chance`=8 WHERE `Entry`=10358 AND `Item`=4604 AND `Reference`=0 AND `GroupId`=0;
+UPDATE `creature_loot_template` SET `Chance`=34 WHERE `Entry`=10358 AND `Item`=2589 AND `Reference`=0 AND `GroupId`=0;
+UPDATE `creature_loot_template` SET `Chance`=0.65 WHERE `Entry`=10358 AND `Item`=3013 AND `Reference`=0 AND `GroupId`=0;
+UPDATE `creature_loot_template` SET `Chance`=1 WHERE `Entry`=10358 AND `Item`=1181 AND `Reference`=0 AND `GroupId`=0;
+/* Leather Bags will be grabbed from reference loot table */
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=2657 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE `Entry`=10358 AND `Item`=856 AND `Reference`=0 AND `GroupId`=0;
+DELETE FROM `creature_loot_template` WHERE  `Entry`=10358 AND `Item`=44009 AND `Reference`=44009 AND `GroupId`=0;
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
+(10358, 44009, 44009, 0.35, 0, 1, 0, 1, 1, 'Fellicent\'s Shade - (ReferenceTable) Leather Bags');
+
+Assumptions:
+ilevel 11 8-12 mobs
+ilevel 12 9-13 mobs
+ilevel 13 10-14 mobs
+ilevel 14 11-15 mobs
+ilevel 15 12-16 mobs
+
+6506 Infantry Boots ilvl 11
+6510 Infantry Gauntlets ilvl 11
+9761 Cadet Cloak ilvl 11
+9745 Simple Cape ilvl 11
+6521 Pioneer Gloves ilvl 11
+9754 Gypsy Cloak ilvl 11
+6518 Pioneer Boots ilvl 11
+6515 Disciple's Gloves ilvl 11
+7351 Disciple's Boots ilvl 11
+
+4677 Veteran Cloak ilvl 12
+9742 Simple Cord ilvl 12
+9760 Cadet Bracers ilvl 12
+9743 Simple Shoes ilvl 12
+9758 Cadet Belt ilvl 12
+9750 Gypsy Sash ilvl 12
+9751 Gypsy Sandals ilvl 12
+9752 Gypsy Bands ilvl 12
+9744 Simple Bands ilvl 12
+
+3643 Spellbinder Bracers ilvl 14
+4690 Hunting Belt ilvl 13
+4683 Spellbinder Cloak ilvl 13
+
+2971 Spellbinder Boots ilvl 14
+2972 Spellbinder Gloves ilvl 14
+2979 Veteran Boots ilvl 14 
+4678 Veteran Girdle ilvl 14 
+4689 Hunting Cloak ilvl 13 
+
+3213 Veteran Bracers ilvl 13
+4684 Spellbinder Belt ilvl 13
+
+9762 Cadet Gauntlets ilvl 13
+9755 Gypsy Gloves ilvl 13
+9759 Cadet Boots ilvl 13
+
+9746 Simple Gloves ilvl 13
+6555 Bard's Cloak ilvl 14
+6549 Soldier's Cloak ilvl 14
+
+
+Current Ref Tables:
+24074 1% 
+24075 1%
+24076 1%
+
 
 Rare Mobs Checklist:
 
 10358 Fellicent's Shade - Pathing sniffed (Yahmage Rares 1) (COMPLETE)
-10359 Sri'skulk - Random  ?,?* + 83,49** spawned (Yahmage Rares 1) 89.9,46.8 (Yahmage Rares 2) **wander data (Yahmage Rares 6)
-1911 Deeb - Western Spawned (Yahmage Rares 1) 57.5,28.2 (Yahmage Rares 3) 62.7,28.7 Literally Floating (Yahmage Rares 4) 57.95, 26.5
-10356 Bayne - Spawned outside Deathknell?,? + 56.8,39.9 (Yahmage Rares 1), 50.0,51.2** spawned (Yahmage Rares 2) 40.1,42.3 (Yahmage Rares 3) *wander data (Yahmage Rares 6)
+
+
+10359 Sri'skulk - Random  ?,?* + spawned (Yahmage Rares 1) 89.9,46.8 (Yahmage Rares 2) 83,49* (Yahmage Rares 6)
+1911 Deeb - Western Spawned (Yahmage Rares 1) 57.5,28.2 (Yahmage Rares 3) 62.7,28.7 Literally Floating (Yahmage Rares 4) 57.95,26.5 58.9,27.2 (Yahmage Rares 7)
+10356 Bayne - Spawned outside Deathknell ?,? (Yahmage Rares 1),  40.1,42.3 (Yahmage Rares 3) 50.0,51.2* 56.8,39.9* (Yahmage Rares 6)
 1531 Lost Soul - 3 Spawned at a time, 53.3,45.7 + 53.1,48.7 (Yahmage Rares 1) 46.5,38.4 (Yahmage Rares 3) (COMPLETE)
 1533 Tormented Spirit - Pathing sniffed (Yahmage Rares 1)
-1936 Farmer Solliden - 38.0,49.6 (Yahmage Rares 1) 34.1, 52.1 spawned (Yahmage Rares 2) 38.0,52.2 (Yahmage Rares 3)
+1936 Farmer Solliden - 38.0,49.6 (at least half the time) (Yahmage Rares 1) 34.1, 52.1 spawned (Yahmage Rares 2) 38.0,52.2 (Yahmage Rares 3) 37.1,49.4 (Yahmage Rares 7)
 1910 Muad - Pathing Sniffed (Yahmage Rares 1) (COMPLETE) 
 10357 Ressan the Needler - 55.9, 61.5 (Yahmage Rares 1) 52.0,63.7 (Yahmage Rares 3) 43,67* (Yahmage Rares 6)
+
+Zone Loot:
+-- 3325 Vile Fin Battle Axe satisfactory drop rate on AC
+-- 3327 Vile Fin Oracle Staff satisfactory drop rate on AC
+-- 4263 Standard Issue Shield satisfactory drop rate on AC
+-- 3329 Spiked Wooden Plank too high rate on AC
+UPDATE `creature_loot_template` SET `Chance`=1.25 WHERE `Entry`=1753 AND `Item`=3329 AND `Reference`=0 AND `GroupId`=0;
+-- 3328 Spider Web Robe satisfactory drop rate on AC
+-- 3319 Short Sabre satisfactory drop rate on AC
+-- 3332 Perrine's Boots agree with drop rate on AC
+-- 3331 Melrache's Cape agree with drop rate on AC
+-- 3321 Gray Fur Booties agree with drop rate on AC
+-- 3330 Dargol's Hauberk agree with drop rate on AC
+-- 3335 Farmer's Broom cleanup drop rate on AC
+UPDATE `creature_loot_template` SET `Chance`=7 WHERE `Entry`=1935 AND `Item`=3335 AND `Reference`=0 AND `GroupId`=0;

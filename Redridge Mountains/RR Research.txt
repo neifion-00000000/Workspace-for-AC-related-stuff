@@ -1,0 +1,3 @@
+Redridge Mountains Research
+
+https://www.wowhead.com/wotlk/quest=3741/hilarys-necklace is missing event, I have it sniffed in 3.4.0.47168 Troll Mage Yahmage Stranglethorn Vale Quests (3) also Redridge Mountain Hillarys Pendant Quest and zone discoveries.pkt

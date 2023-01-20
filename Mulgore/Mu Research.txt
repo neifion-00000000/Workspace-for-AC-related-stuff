@@ -2,7 +2,7 @@ Mulgore:
 
 Patrol Brave Windfeather 3209 goes from first hut to last hut then backwards 1 hut at a time back to second hut then forward 1 hunt at a time to end then back to first hut and loops  (Wrong on AC--Sniffed)
 
--- Mulgore Zone Drops
+-- Mulgore Zone Drops  (DONE)
 -- Squealear's Belt Should be 100% (Already Correct on AC)
 -- Crooked Staff could be up to seems to be closer to 1.5% than 2% both in game and on wowhead
 UPDATE `creature_loot_template` SET `Chance`=1.5 WHERE `Entry`=2953 AND `Item`=1388 AND `Reference`=0 AND `GroupId`=0;
