@@ -1,1 +1,3 @@
-Mangled Journal is 100%
+-- Mangled Journal is 100%
+
+-- Blazerunner respawn was about 7m30sec
