@@ -103,8 +103,6 @@ Current Ref Tables:
 Rare Mobs Checklist:
 
 10358 Fellicent's Shade - Pathing sniffed (Yahmage Rares 1) (COMPLETE)
-
-
 10359 Sri'skulk - Random  ?,?* + spawned (Yahmage Rares 1) 89.9,46.8 (Yahmage Rares 2) 83,49* (Yahmage Rares 6)
 1911 Deeb - Western Spawned (Yahmage Rares 1) 57.5,28.2 (Yahmage Rares 3) 62.7,28.7 Literally Floating (Yahmage Rares 4) 57.95,26.5 58.9,27.2 (Yahmage Rares 7)
 10356 Bayne - Spawned outside Deathknell ?,? (Yahmage Rares 1),  40.1,42.3 (Yahmage Rares 3) 50.0,51.2* 56.8,39.9* (Yahmage Rares 6)
