@@ -1,0 +1,2 @@
+-- Slows repeat behavior of Commander Althea Ebonlocke (NPC 264) text broadcasts
+UPDATE `smart_scripts` SET `event_param3`=1202000, `event_param4`=3026000 WHERE `entryorguid`=264 AND `source_type`=0 AND `id`=1 AND `link`=0 AND `action_type`=1;
