@@ -1,0 +1,19 @@
+Boars have slightly faster than normal respawn
+
+Starter area chests 1 outside 1 inside cave 3 min respawn
+
+
+2-3 Copper Nodes (one may just have longer timer?) and 1 Chest in Grizzled Den. 
+
+Wendigo Mane Drop rate ~45%.  AC is close enough but 45 would definitely be closer to correct.
+Shimmerweed drop rate ~55%.  
+
+Shimmerweed is split 6 and 8 (camp with cave) between the two camps max spawns 1 Battered Chest for the area as well, which includes the Bear Cave spawn, and the southern area below the cave, might be more
+
+Leper Gnome area has 1 food/water crate and 1 Treasure chest that shares spawn with lake chest from lake to the east
+
+Gol'Bolar Quarry -
+1 food/water in friendly area
+1 food/water and 1 Battered Chest and 2-3 Earthroot 2-3 Copper Ore (some area sharing) in Quarry 
+1 Battered Chest in cave 2-3 Copper Ore (bugged node is common and makes scan difficult)
+There is an occasional event where non-hostile pack spawns, does a loop, and after the 2nd loop attacks the town (most will die during the loop)
